@@ -1,0 +1,15 @@
+@import url('./reset.css');
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Medium.woff2');
+}
