@@ -4,22 +4,20 @@
                     <div class="application__info">
                         <input class="application__info__input" type="text" placeholder="Ваше имя">
                         <input class="application__info__input " type="text" placeholder="Ваш телефон">
-                        <span class="application__info__input clock"></span>
+                        <span class="application__info__input clock" @click="() => openTime =! openTime" ></span>
                     </div>
-                    <div v-show="true" class="application__check">
-                        <div class="application__check__time">
-                            <div class="application__radio">
-                                <input type="radio" id="morning" name="time">
-                                <label for="morning">10:00-13:00</label>
-                            </div>
-                            <div class="application__radio">
-                                <input type="radio" id="day" name="time">
-                                <label for="day">3:00-16:00</label>
-                            </div>
-                            <div class="application__radio">
-                                <input type="radio" id="evening" name="time">
-                                <label for="evening">16:00-19:00</label>
-                            </div>
+                    <div v-show="false">
+                        <div>
+                            <input type="radio" id="morning" name="time">
+                            <label for="morning">10:00-13:00</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="day" name="time">
+                            <label for="day">3:00-16:00</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="evening" name="time">
+                            <label for="evening">16:00-19:00</label>
                         </div>
                         <p class="application__check__info">Выберите удобное время<br>для звонка</p>
                     </div>
@@ -34,10 +32,11 @@
             </form>
 </template>
 
-<script>
-export default {
+<script setup>
+import {ref} from "vue" 
 
-}
+const openTime = ref(false) 
+
 </script>
 
 <style scoped>
