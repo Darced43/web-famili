@@ -4,9 +4,9 @@
                     <div class="application__info">
                         <input class="application__info__input" type="text" placeholder="Ваше имя">
                         <input class="application__info__input " type="text" placeholder="Ваш телефон">
-                        <span class="application__info__input clock"></span>
+                        <span class="application__info__input clock" @click="() => openTime =! openTime" ></span>
                     </div>
-                    <div v-show="false">
+                    <div v-show="openTime">
                         <div>
                             <input type="radio" id="morning" name="time">
                             <label for="morning">10:00-13:00</label>
@@ -31,10 +31,11 @@
             </form>
 </template>
 
-<script>
-export default {
+<script setup>
+import {ref} from "vue" 
 
-}
+const openTime = ref(false) 
+
 </script>
 
 <style scoped>
