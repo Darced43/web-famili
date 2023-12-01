@@ -83,6 +83,10 @@ const showBurger = ref(false)
                         mask-composite: exclude; 
           }
 }
+.header{
+    position: relative;
+    z-index: 1000;
+}
 .wrapper__header{
     padding: 30px 50px 0 50px;
 }
