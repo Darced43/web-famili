@@ -6,18 +6,35 @@
                         <input class="application__info__input " type="text" placeholder="Ваш телефон">
                         <span class="application__info__input clock" @click="() => openTime =! openTime" ></span>
                     </div>
-                    <div v-show="false">
-                        <div>
-                            <input type="radio" id="morning" name="time">
-                            <label for="morning">10:00-13:00</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="day" name="time">
-                            <label for="day">3:00-16:00</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="evening" name="time">
-                            <label for="evening">16:00-19:00</label>
+                    <div v-show="openTime" class="application__check">
+                        <div class="application__check__time" >
+                            <div class="application__radio" >
+                                <input 
+                                    @click="checkRadio()"
+                                    class="radio__time" 
+                                    type="radio" 
+                                    id="morning" 
+                                    name="time">
+                                <label for="morning">10:00-13:00</label>
+                            </div>
+                            <div class="application__radio">
+                                <input 
+                                    @click="checkRadio()"
+                                    class="radio__time" 
+                                    type="radio" 
+                                    id="day" 
+                                    name="time">
+                                <label for="day">3:00-16:00</label>
+                            </div>
+                            <div class="application__radio">
+                                <input 
+                                    @click="checkRadio()" 
+                                    class="radio__time" 
+                                    type="radio" 
+                                    id="evening" 
+                                    name="time">
+                                <label for="evening">16:00-19:00</label>
+                            </div>
                         </div>
                         <p class="application__check__info">Выберите удобное время<br>для звонка</p>
                     </div>
@@ -36,6 +53,11 @@
 import {ref} from "vue" 
 
 const openTime = ref(false) 
+const allInputRadio = document.querySelectorAll('.radio__time')
+
+function checkRadio(){
+    console.log(allInputRadio)
+}
 
 </script>
 
@@ -80,6 +102,16 @@ const openTime = ref(false)
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+}
+
+.radio__active{
+    display: flex;
+    height: 44px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #86919E;
 }
 
 .application__check__info{
