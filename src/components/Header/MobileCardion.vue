@@ -111,6 +111,7 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+
  .mobile__burger__cardions{
     display: none;
     row-gap: 2.5px;
@@ -201,6 +202,15 @@ a{
   transform: rotate(180deg);
   transition: 0.5s;
 }
+
+/* @media(hover: hover){
+  a:hover{
+    background: linear-gradient(88deg, #369AAC 0.86%, #05ADC5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} */
 
 @media(max-width:600px){
 
