@@ -6,19 +6,22 @@
                         <input class="application__info__input " type="text" placeholder="Ваш телефон">
                         <span class="application__info__input clock"></span>
                     </div>
-                    <div v-show="false">
-                        <div>
-                            <input type="radio" id="morning" name="time">
-                            <label for="morning">10:00-13:00</label>
+                    <div v-show="true" class="application__check">
+                        <div class="application__check__time">
+                            <div class="application__radio">
+                                <input type="radio" id="morning" name="time">
+                                <label for="morning">10:00-13:00</label>
+                            </div>
+                            <div class="application__radio">
+                                <input type="radio" id="day" name="time">
+                                <label for="day">3:00-16:00</label>
+                            </div>
+                            <div class="application__radio">
+                                <input type="radio" id="evening" name="time">
+                                <label for="evening">16:00-19:00</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id="day" name="time">
-                            <label for="day">3:00-16:00</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="evening" name="time">
-                            <label for="evening">16:00-19:00</label>
-                        </div>
+                        <p class="application__check__info">Выберите удобное время<br>для звонка</p>
                     </div>
                     <div class="application__politics">
                         <img src="../../img/danger-circle.svg"/>
@@ -47,6 +50,46 @@ export default {
     background: #FFF;
     padding: 60px;
     border-right: 0;
+}
+
+.application__check{
+    display: flex;
+    gap: 20px;
+}
+.application__check__time{
+    display: flex;
+    gap: 10px;
+}
+.application__check__time input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.application__radio{
+    display: flex;
+    height: 44px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #E1E8F6;
+
+    color:  #86919E;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.application__check__info{
+    color:  #86919E;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 }
 .application__info{
     display: flex;
