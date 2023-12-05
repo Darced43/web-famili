@@ -13,3 +13,10 @@ body {
     font-family: "Gilroy";
     src: url('./fonts/Gilroy-Medium.woff2');
 }
+
+@media(max-width:750px) {
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+    }
+}
