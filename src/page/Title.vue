@@ -12,10 +12,12 @@
             <div class="titlePage__agl__form">Просто оставьте заявку</div>
             <TitleFormApplication/>
         </div>
+        <TitleService/>
 </template>
 
 <script setup>
 import TitleFormApplication from '../components/Title/TitleFormApplication.vue';
+import TitleService from '../components/Title/TitleService.vue';
 
 </script>
 

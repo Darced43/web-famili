@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/base": "^5.0.0-beta.26",
+    "swiper": "^11.0.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
