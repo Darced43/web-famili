@@ -191,6 +191,7 @@ const showBurger = ref(false)
     position:fixed;
     top:41px;
     right:3%;
+    z-index: 1100;
 }
 
 @media (min-width:2500px) {
