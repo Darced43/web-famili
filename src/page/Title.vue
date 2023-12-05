@@ -1,5 +1,5 @@
 <template>
-        <div class="wrapper">
+        <div class="wrapper__title">
             <div class="titlePage__advertisement">
                 <h2 class="titlePage__advertisement__text">
                     Приведём клиентов
@@ -9,18 +9,18 @@
                 </h2>
             </div>
             <div class="titlePage__advertisement__circle"></div>
-            <div class="titlePage__agl__form">Просто оставьте заявку</div>
+            <div class="titlePage__agl__form">Просто оставьте заявку</div>
             <TitleFormApplication/>
         </div>
 </template>
 
 <script setup>
-import TitleFormApplication from '../components/Header/TitleFormApplication.vue';
+import TitleFormApplication from '../components/Title/TitleFormApplication.vue';
 
 </script>
 
 <style scoped>
-.wrapper{
+.wrapper__title{
     margin: 0 195px;
 }
 .titlePage__advertisement{
@@ -69,5 +69,68 @@ import TitleFormApplication from '../components/Header/TitleFormApplication.vue'
     font-weight: 500;
     line-height: 120%; 
     margin-bottom: 30px;
+}
+@media(max-width:1400px){
+    .wrapper__title{
+        margin: 0 125px;
+    }
+    .titlePage__advertisement__text{
+        margin-top: 110px;
+        margin-bottom: 240px;
+        font-size: 64px;
+    }
+    .titlePage__advertisement__text span{
+        font-size: 96px;
+    }
+    .titlePage__advertisement__circle{
+        top: -60px;
+        left: -250px;
+    }
+}
+
+@media (max-width: 900px){
+    .titlePage__advertisement__circle{
+        left: -450px;
+    }
+    .titlePage__advertisement__text{
+        margin-top: 104px;
+        margin-bottom: 120px;
+        font-size: 42px;
+    }
+    .titlePage__advertisement__text span{
+        font-size: 76px;
+    }
+    .titlePage__agl__form{
+        font-size: 30px;
+    }
+}
+@media(max-width:768px){
+    .wrapper__title{
+        margin: 0 65px;
+    }
+}
+@media(max-width:650px){
+    .titlePage__advertisement__text{
+        font-size: 36px;
+        margin-top: 90px;
+    }
+    .titlePage__advertisement__text span{
+        font-size: 52px;
+    }
+    .titlePage__agl__form {
+        font-size: 32px;
+    }
+    .application__info {
+        gap:15px;
+    }
+    .titlePage__advertisement__circle {
+        left: -550px;
+    }
+}
+
+@media(max-width:550px){
+    .wrapper__title[data-v-f471afbb] {
+        margin: 0 60px;
+    }
 }
 </style>
