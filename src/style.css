@@ -20,14 +20,9 @@ body {
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: transparent;
+    width: 544px !important;
+    height: 206px !important;
 }
 
 .swiper-slide img {
@@ -37,7 +32,11 @@ body {
     object-fit: cover;
 }
 
-.swiper-slide {
+.swiper-wrapper {
+    gap: 180px;
+}
+
+/* .swiper-slide {
     width: 80%;
 }
 
@@ -47,7 +46,7 @@ body {
 
 .swiper-slide:nth-child(3n) {
     width: 40%;
-}
+} */
 
 @media(max-width:750px) {
     .wrapper {

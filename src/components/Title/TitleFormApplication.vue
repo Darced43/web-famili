@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-import {ref, watch} from "vue" 
+import {ref} from "vue" 
 
 const openTime = ref(false) 
 
@@ -94,6 +94,7 @@ function checkRadio(e){
     display: flex;
     position: relative;
     z-index: 1000;
+    margin-bottom: 300px;
 }
 .application__section{
     border-radius: 28px 0px 0px 28px;
