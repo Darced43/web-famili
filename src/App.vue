@@ -10,11 +10,6 @@ import Header from './components/Header/Header.vue'
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
-        <div style='width:100px; height:100px'>1</div>
-        <div style='width:100px; height:100px'>1</div>
-        <div style='width:100px; height:100px'>1</div>
-        <div style='width:100px; height:100px'>1</div>
-        <div style='width:100px; height:100px'>1</div>
       </div>
     </div>
 </template>

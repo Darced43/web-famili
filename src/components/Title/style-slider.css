@@ -1,0 +1,21 @@
+.carousel__pagination {
+    gap: 2px;
+}
+
+.carousel__pagination-button::after {
+    width: 20px !important;
+    height: 20px !important;
+    background: #E1E8F6;
+    border-radius: 4px !important;
+}
+
+.carousel__pagination-button:hover::after,
+.carousel__pagination-button--active::after {
+    background: #3C4D5C;
+
+}
+
+.carousel__prev,
+.carousel__next {
+    display: none !important;
+}

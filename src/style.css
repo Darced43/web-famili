@@ -9,9 +9,12 @@ body {
     margin: 0 auto;
 }
 
-@font-face {
-    font-family: "Gilroy";
-    src: url('./fonts/Gilroy-Medium.woff2');
+.wrapper__internal {
+    margin: 0 195px;
+}
+
+.swiper-wrapper {
+    gap: 180px;
 }
 
 .swiper {
@@ -22,7 +25,6 @@ body {
 .swiper-slide {
     background: transparent;
     width: 544px !important;
-    height: 206px !important;
 }
 
 .swiper-slide img {
@@ -32,25 +34,51 @@ body {
     object-fit: cover;
 }
 
-.swiper-wrapper {
-    gap: 180px;
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/Gilroy-Medium.woff2');
 }
 
-/* .swiper-slide {
-    width: 80%;
+@media(max-width:1700px) {
+    .swiper-wrapper {
+        gap: 140px;
+    }
+
+    .swiper-slide {
+        background: transparent;
+        width: auto !important;
+    }
 }
 
-.swiper-slide:nth-child(2n) {
-    width: 60%;
+@media(max-width:1400px) {
+    .wrapper__title {
+        margin: 0 125px;
+    }
+
+    .wrapper__internal {
+        margin: 0 125px;
+    }
 }
 
-.swiper-slide:nth-child(3n) {
-    width: 40%;
-} */
+@media(max-width:1024px) {
+    .swiper-wrapper {
+        gap: 70px;
+    }
+}
 
 @media(max-width:750px) {
     .wrapper {
         overflow: hidden;
         position: relative;
+    }
+}
+
+@media(max-width:550px) {
+    .swiper-wrapper {
+        gap: 50px;
+    }
+
+    .wrapper__internal {
+        margin: 0 60px;
     }
 }

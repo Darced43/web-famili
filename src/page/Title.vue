@@ -1,5 +1,5 @@
 <template>
-        <div class="wrapper__title">
+        <div class="wrapper__internal">
             <div class="titlePage__advertisement">
                 <h2 class="titlePage__advertisement__text">
                     Приведём клиентов
@@ -22,9 +22,7 @@ import TitleService from '../components/Title/TitleService.vue';
 </script>
 
 <style scoped>
-.wrapper__title{
-    margin: 0 195px;
-}
+
 .titlePage__advertisement{
     position: relative;
 }
@@ -73,9 +71,6 @@ import TitleService from '../components/Title/TitleService.vue';
     margin-bottom: 30px;
 }
 @media(max-width:1400px){
-    .wrapper__title{
-        margin: 0 125px;
-    }
     .titlePage__advertisement__text{
         margin-top: 110px;
         margin-bottom: 240px;
@@ -130,9 +125,4 @@ import TitleService from '../components/Title/TitleService.vue';
     }
 }
 
-@media(max-width:550px){
-    .wrapper__title[data-v-f471afbb] {
-        margin: 0 60px;
-    }
-}
 </style>

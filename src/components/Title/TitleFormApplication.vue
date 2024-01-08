@@ -250,6 +250,9 @@ function checkRadio(e){
     .titlePage__agl__form{
         font-size: 32px;
     }
+    .application{
+        margin-bottom: 240px;
+    }
     .application__info{
         gap:20px;
     }
