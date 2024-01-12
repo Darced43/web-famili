@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/Header/Header.vue'
+import Footer from './components/Footer/Footer.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import Header from './components/Header/Header.vue'
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
+        <Footer/>
       </div>
     </div>
 </template>
