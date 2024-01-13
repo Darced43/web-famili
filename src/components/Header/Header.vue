@@ -25,7 +25,7 @@
                 </Teleport>
             </div>
             <div class="header__filling__route">
-                <a href="">Об агенстве </a>
+                <router-link to="/About">Об агенстве</router-link>
                 <a href="">кейсы</a>
                 <a href="">отзывы</a>
             </div>

@@ -4,6 +4,7 @@ import './style.css'
 import App from './App.vue'
 
 import Title from './page/Title.vue'
+import About from './page/About.vue'
 
 const cityName = ref('Киров')
 
@@ -13,7 +14,12 @@ const router = createRouter({
             name: 'Title',
             path: '/',
             component: Title,
-        }
+        },
+        {
+            name: 'About',
+            path: '/About',
+            component: About,
+        },
     ]
 })
 

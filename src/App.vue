@@ -11,14 +11,17 @@ import Footer from './components/Footer/Footer.vue'
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
         <div style='width:100px; height:100px'>1</div>
-        <Footer/>
       </div>
     </div>
+      <Footer/>
 </template>
 
 <style scoped>
 .wrapper__content{
     max-width: 1920px;
     margin: 0 auto;
+}
+.footer{
+  background: #1D2429;
 }
 </style>

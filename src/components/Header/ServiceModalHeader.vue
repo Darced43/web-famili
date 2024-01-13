@@ -8,7 +8,7 @@
               <img @click="$emit('close')" src="../../img/header-closes.svg" alt="крестик">
             </div>
             <div class="burger__info">
-              <a>Об агенстве</a>
+              <router-link to="/About">Об агенстве</router-link>
               <a class="coint">
                 <div>Кейсы</div>
                 <span class="coint__number">25</span>

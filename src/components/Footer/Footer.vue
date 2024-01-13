@@ -95,14 +95,16 @@ nav{
     background:  #1D2429;
 }
 .wrapper__footer{
-    margin: 0 195px;
-    padding: 100px 0;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .footer__content{
     display: flex;
     justify-content: space-between;
     column-gap: 293px;
+    margin: 0 195px;
+    padding: 100px 0;
 }
 
 .footer__content__left{
@@ -271,6 +273,12 @@ nav{
     }
     .content__social{
         margin-bottom: 42px;
+    }
+}
+
+@media(max-width:1400px){
+    .footer__content{
+        margin: 0;
     }
 }
 
