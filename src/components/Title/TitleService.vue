@@ -64,6 +64,7 @@ import { Pagination } from 'swiper/modules';
 import TitleServicePromotion from './TitleServicePromotion.vue'
 import TitleServicePromotionSlider from './TitleServicePromotionSlider.vue'
 
+
 const modules = Pagination
 
 const serviceAgl = ref()
@@ -93,6 +94,26 @@ function activeMenu(e){
      showContenService(activeAgl)
 }
 
+const webServices = [
+    {
+        massege: 'Услуги продвижения',
+        id: "one",
+        status: 'active__info',
+        anchor: serviceAgl
+    },
+    {
+        massege: 'Интернет маркетинг',
+        id: "two",
+        status: '',
+        anchor: serviceInternet
+    } ,
+    {
+        massege: 'Создание сайтов',
+        id: "three",
+        status: '',
+        anchor: serviceWebsite
+    }
+]
 
 </script>
 

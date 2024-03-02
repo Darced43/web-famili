@@ -15,9 +15,11 @@
         <TitleService/>
 </template>
 
-<script setup>
+<script setup>;
+import { ref } from 'vue';
 import TitleFormApplication from '../components/Title/TitleFormApplication.vue';
 import TitleService from '../components/Title/TitleService.vue';
+
 
 </script>
 
