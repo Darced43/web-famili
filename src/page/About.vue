@@ -12,9 +12,9 @@
             <h2>Компания «Family»</h2>
             <p class="about__description">Комплексный подход к проектам: разработка, поддержка, эффективное продвижение</p>
             <span class="about__famaly"></span>
-            <AboutStaff/>
         </div>
     </div>
+    <AboutStaff/>
 </template>
 
 <script setup>
