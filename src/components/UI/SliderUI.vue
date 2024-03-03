@@ -37,8 +37,6 @@ const props = defineProps({
 const sliderlem = ref([])
 
 onMounted(() => {
-    //console.log(sliderlem.value)
-
     const firstMenu = sliderlem.value
     for(let i = 0; i < 1; i++){
         firstMenu[i].classList.add('active__info')
@@ -51,6 +49,7 @@ function activeMenu(e){
     })
     e.currentTarget.classList.add('active__info')
     store.aboutSlider = e.currentTarget.innerHTML
+    console.log(store.aboutSlider)
 }
 </script>
 
@@ -66,6 +65,11 @@ function activeMenu(e){
         transition: 1s;
         opacity: 1;
     }
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
 }
 .wrapper__service__slider{
     margin-left: 195px;
@@ -88,6 +92,7 @@ function activeMenu(e){
     -webkit-text-fill-color: transparent;
     opacity: 0.1;
     transition: 1s;
+    width: 550px;
 }
 .active__info{
     opacity: 1;
@@ -112,11 +117,15 @@ function activeMenu(e){
 }
 
 @media(max-width:1500px){
+    .swiper-wrapper {
+        gap: 100px;
+    }
     .active__info{
         font-size: 64px;
     }
     .service__info{
         font-size: 64px;
+        width: 440px;
     }
 }
 @media(max-width:1200px){
