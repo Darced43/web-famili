@@ -1,6 +1,6 @@
 <template>
     <p>В нашей команде</p>
-    <AbourSlider 
+    <SliderUI
         :webServices="webServices"
     />
     <div class="wrapper__internal">
@@ -23,12 +23,13 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
-import AbourSlider from './AboutSlider.vue'
+import {onMounted} from 'vue'
+import SliderUI from '../UI/SliderUI.vue'
 import {store} from '../../store/store.js'
 
-const contenService = ref('Руководство')
-
+onMounted(() => {
+    store.aboutSlider = ''
+})
 const webServices = [
     {
         massege: 'Руководство',
