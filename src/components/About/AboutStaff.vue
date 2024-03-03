@@ -1,37 +1,49 @@
 <template>
-  <p>В нашей команде</p>
-  <TitleServiceSlider :webServices="webServices"/>
+    <p>В нашей команде</p>
+    <AbourSlider 
+        :webServices="webServices"
+    />
+    <div class="wrapper__internal">
+        <div 
+            v-if="store.aboutSlider === '' || store.aboutSlider === 'Руководство'"
+            class="service__working">
+            Первый
+        </div>        
+        <div  
+            class="service__working"
+            v-if="store.aboutSlider === 'Seo отдел'">
+                Второй
+        </div>
+        <div  
+            class="service__working"
+            v-if="store.aboutSlider === 'Прочая челядь'">
+                Третий
+        </div>
+    </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
-import TitleServiceSlider from '../Title/TitleServiceSlider.vue'
+import AbourSlider from './AboutSlider.vue'
+import {store} from '../../store/store.js'
 
-const serviceAgl = ref()
-const serviceInternet = ref()
-const serviceWebsite = ref()
-const allService = [
-    serviceAgl, serviceInternet, serviceWebsite
-]
+const contenService = ref('Руководство')
 
 const webServices = [
     {
-        massege: 'Услуги продвижения',
+        massege: 'Руководство',
         id: "one",
-        status: 'active__info',
-        anchor: serviceAgl
+        idKey: 1
     },
     {
-        massege: 'Интернет маркетинг',
+        massege: 'Seo отдел',
         id: "two",
-        status: '',
-        anchor: serviceInternet
+        idKey: 2
     } ,
     {
-        massege: 'Создание сайтов',
+        massege: 'Прочая челядь',
         id: "three",
-        status: '',
-        anchor: serviceWebsite
+        idKey: 3
     }
 ]
 </script>
